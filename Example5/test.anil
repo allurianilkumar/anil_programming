@@ -1,0 +1,4 @@
+first = "Anil"
+second = "Kumar"
+print first
+print second

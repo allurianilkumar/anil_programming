@@ -1,0 +1,10 @@
+first = "Anil"
+second = ["Kumar"]
+hash = ["first": 10, "second": 20]
+print "First:", first, "\nSecond:", second, "\nHash:", hash
+def demo(){
+first1 = 10000
+print "Function ...."
+print first1
+}
+print demo()

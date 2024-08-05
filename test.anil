@@ -1,0 +1,70 @@
+// TEST CLASS
+Class Test {
+    // init function with id, name, mobile are attributes of Test class
+    init { 
+        id = id
+        name = name
+        mobile = mobile
+        attributes = ["id", "name", "mobile"]
+    }
+
+    // show function to print attributes
+    show { 
+        print id, name, mobile 
+    }
+    
+    // add_attribute function to add dynamic attributes
+    add_attribute { 
+        attributes.push(attribute_name)
+        self[attribute_name] = attribute_value 
+    }
+
+    // print_all function to print all attributes
+    print_all { 
+        for attribute in attributes { 
+            print self[attribute] 
+        }
+    }
+}
+
+// ANOTHER CLASS
+Class AnotherClass {
+    // init function with some attributes
+    init {
+        value = value
+        data = data
+    }
+
+    // display function to print value and data
+    display {
+        print value, data
+    }
+}
+
+// create an object of Test class
+testObj = Test.init(1, "anil", 1233)
+testObj.show() // calling show function with object
+
+// Adding dynamic attributes
+testObj.add_attribute("email", "anil@example.com")
+testObj.add_attribute("address", "123 Street Name")
+testObj.print_all() // print all attributes including dynamic ones
+
+// create an object of AnotherClass
+anotherObj = AnotherClass.init(42, {"key": "value"})
+anotherObj.display() // calling display function with object
+
+// Arrays
+arr = [1, 2, 3, 4, 5]
+print arr // print array
+
+// Hashes
+hash = {"name": "anil", "age": 30, "city": "SomeCity"}
+print hash["name"], hash["age"], hash["city"] // print hash values
+
+// Functions
+def greet(name) {
+    print "Hello, " + name
+}
+
+greet("anil") // calling function

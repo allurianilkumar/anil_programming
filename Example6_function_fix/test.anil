@@ -1,0 +1,11 @@
+first = "Anil"
+second = ["Kumar"]
+hash = ["first": 10, "second": 20]
+print "First:", first
+print "Second:", second
+print "Hash:", hash
+
+def demo() {
+    print "hello demo"
+}
+print demo

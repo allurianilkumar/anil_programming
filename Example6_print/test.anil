@@ -1,0 +1,6 @@
+first = "Anil"
+second = "Kumar"
+print "First:", first, "Second:", second
+print "First:", first, "Second:", second
+array = [1,2,3,4]
+print array

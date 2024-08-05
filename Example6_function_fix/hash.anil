@@ -1,0 +1,2 @@
+second = ["1":"Apple","2":"Bananan"]
+print second
